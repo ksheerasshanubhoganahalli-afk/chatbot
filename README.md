@@ -30,7 +30,7 @@ It acts as a **Socratic Tutor** — guiding users by asking questions instead of
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/socratic-chatbot.git
+git clonhttps://github.com/ksheerasshanubhoganahalli-afk/chatbot.git
 cd socratic-chatbot
 ```
 
