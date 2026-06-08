@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "sk_30b077fe76db1b4ffa3b6929e9fa2ec2"  # Replace with your actual API key
+API_KEY = "sk_30b077fe76db1b4ffa3b6929e9fa2ec2"  
 URL = "https://api.inceptionlabs.ai/v1/chat/completions"
 
 messages = [
