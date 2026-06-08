@@ -180,7 +180,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 If you have questions or suggestions, feel free to open an issue or reach out!
 
-**GitHub**: )
+**GitHub**:https://github.com/ksheerasshanubhoganahalli-afk/ )
 ```
 
 ---
