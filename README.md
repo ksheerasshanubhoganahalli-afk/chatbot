@@ -30,20 +30,20 @@ It acts as a **Socratic Tutor** — guiding users by asking questions instead of
 1. Clone the repo:
 
 ```bash
-git clonhttps://github.com/ksheerasshanubhoganahalli-afk/chatbot.git
-cd socratic-chatbot
+git clone https://github.com/ksheerasshanubhoganahalli-afk/chatbot.git
+cd chatbot
 ```
 
 2. Install requests:
 
 ```bash
-pip install requests
+pip install requests python-dotenv
 ```
 
-3. Set your API key in `chatbot.py`:
+3. Create `.env` file and add your API key:
 
-```python
-API_KEY = "your_actual_api_key_here"
+```
+INCEPTION_API_KEY=your_api_key_here
 ```
 
 ---
@@ -76,25 +76,43 @@ Goodbye!
 
 | File | Description |
 |------|-------------|
-| `chatbot.py` | Main chatbot code |
+| `chatbot.py` | Main chatbot with Socratic Tutor role |
+| `.env` | API key file (not uploaded to GitHub) |
+| `.gitignore` | Ignores .env and cache files |
+
+---
+
+## ❓ Troubleshooting
+
+| Error | Solution |
+|-------|----------|
+| `401 Unauthorized` | Check your API key in `.env` |
+| `Connection Error` | Check your internet |
+| `ModuleNotFoundError` | Run `pip install requests python-dotenv` |
 
 ---
 
 ## 📝 License
 
 MIT License
+
+---
+
+## 🙏 Acknowledgments
+
+- [InceptionLabs](https://platform.inceptionlabs.ai/) for the API
 ```
 
 ---
 
-## 📄 Final chatbot.py (Clean Version with .env)
+## 📄 chatbot.py
 
 ```python
 import requests
 from dotenv import load_dotenv
 import os
 
-# Load API key from .env file (safer than hardcoding)
+# Load API key from .env file
 load_dotenv()
 API_KEY = os.getenv("INCEPTION_API_KEY")
 
@@ -159,7 +177,7 @@ while True:
 
 ---
 
-## 📄 .env file (Create this in same folder)
+## 📄 .env
 
 ```
 INCEPTION_API_KEY=your_api_key_here
@@ -169,27 +187,30 @@ INCEPTION_API_KEY=your_api_key_here
 
 ---
 
-## 📋 Final Folder Structure
+## 📋 How to Push to Your Repo
 
-```
-socratic-chatbot/
-├── chatbot.py       # Main chatbot
-├── .env             # API key (not uploaded to GitHub)     
-└── README.md        # Project description
-```
-
----
-
-## 📋 Steps to Push
+Open terminal and run:
 
 ```bash
+cd chatbot
+
 git init
 git add .
 git commit -m "Socratic Tutor Chatbot"
-git remote add origin https://github.com/YOUR_USERNAME/socratic-chatbot.git
+git branch -M main
+git remote add origin https://github.com/ksheerasshanubhoganahalli-afk/chatbot.git
 git push -u origin main
 ```
 
 ---
 
-**⚠️ Again — regenerate your API key NOW since you shared it publicly!** 🔑
+## 📋 Final Folder Structure
+
+```
+chatbot/
+├── chatbot.py       # Main chatbot
+├── .env             # API key
+└── README.md        # Project description
+```
+
+---
