@@ -1,6 +1,3 @@
-# 📄 GitHub README File
-
-Create a file called `README.md` and paste this:
 
 ```markdown
 # 🎓 Socratic Tutor Chatbot
