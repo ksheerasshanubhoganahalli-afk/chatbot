@@ -78,7 +78,6 @@ Goodbye!
 |------|-------------|
 | `chatbot.py` | Main chatbot with Socratic Tutor role |
 | `.env` | API key file (not uploaded to GitHub) |
-| `.gitignore` | Ignores .env and cache files |
 
 ---
 
